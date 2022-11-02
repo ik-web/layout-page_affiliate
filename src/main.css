@@ -1,3 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Raleway:wght@400;700&display=swap');
+/* font-family: 'Bitter', serif; */
+/* font-family: 'Raleway', sans-serif; */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .link {
+    @apply
+    flex justify-center items-center gap-1
+    w-72 px-1 py-3 lg:w-auto
+    text-lg lg:text-base text-main dark:text-gray-300
+    hover:text-green-500 dark:hover:text-green-500
+    outline-none focus:text-green-500 dark:focus:text-green-500
+    transition-all duration-100 ease-linear
+  }
+
+  .mobileMenu {
+    @apply
+    fixed z-10 inset-0  
+    flex flex-col justify-center items-center gap-12 
+    h-full 
+    bg-white 
+    transition-transform duration-200
+  }
+
+  .themeTogglerItem {
+    @apply
+    h-5
+    stroke-2 stroke-gray-600 dark:stroke-gray-400
+  }
+
+  .menuTogglerItem {
+    @apply
+    w-10 h-10
+    stroke-2 stroke-gray-600 dark:stroke-gray-400
+  }
+}
+
+.link_active {
+  @apply 
+  text-green-500 dark:text-green-500
+  underline underline-offset-8 decoration-green-500
+}
