@@ -16,6 +16,17 @@ module.exports = {
       },
       maxWidth: {
         container: '1174px',
+      },
+
+      animation: {
+        linkArrow: 'linkArrow 1s ease-in-out infinite',
+      },
+
+      keyframes: {
+        linkArrow: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(-25%)' }
+        }
       }
     },
   },

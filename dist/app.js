@@ -1,4 +1,5 @@
 const page = document.querySelector('html');
+const header = document.querySelector('#header');
 const themeToggler = document.querySelector('#themeToggler');
 const menuToggler = document.querySelector('#menuToggler');
 const menuButtonBars = document.querySelector('#menuButtonBars');
@@ -20,21 +21,22 @@ const toggleTheme = () => {
 
 menuToggler.addEventListener('click', toggleMenu);
 themeToggler.addEventListener('click', toggleTheme);
-menu.addEventListener('click', ({ target }) => {
-  const link = target.closest('a');
+header.addEventListener('click', ({ target }) => {
+  const headerLink = target.closest('a');
+  const navLink = target.closest('.link');
 
-  if (link && menuIsActive) {
+  if (headerLink && menuIsActive) {
     toggleMenu();
   };
 
-  if (link) {
-    const activeLink = menu.querySelector('.link_active');
+  if (navLink) {
+    const activeNavLink = menu.querySelector('.link_active');
     
-    if (activeLink) {
-      activeLink.classList.remove('link_active');
+    if (activeNavLink) {
+      activeNavLink.classList.remove('link_active');
     }
 
-    link.classList.add('link_active');
+    navLink.classList.add('link_active');
   };
 
 });
