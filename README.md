@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://ik-web.github.io/keep-in-touch/">
+  <a href="https://ik-web.github.io/layout-page_affiliate/">
     ⮚⮚ DEMO LINK ⮘⮘
   </a> 
 </p>
