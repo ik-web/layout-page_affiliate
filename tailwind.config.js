@@ -10,6 +10,7 @@ module.exports = {
       },
       colors: {
         'main': '#1D2F38',
+        'custom-green': '#17A550'
       },
       gridTemplateRows: {
         'page': 'auto 1fr auto',
