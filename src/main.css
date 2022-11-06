@@ -32,7 +32,8 @@
     @apply
     block w-full p-4 sm:w-auto sm:px-16 lg:p-4
     text-white text-base
-    bg-custom-green rounded-md
+    bg-custom-green rounded-md hover:bg-green-500
+    transition-colors
   }
 
   .sectionLinkArrow {
