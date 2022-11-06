@@ -5,6 +5,8 @@ const menuToggler = document.querySelector('#menuToggler');
 const menuButtonBars = document.querySelector('#menuButtonBars');
 const menuButtonCross = document.querySelector('#menuButtonCross');
 const menu = document.querySelector('#menu');
+const submitButton = document.querySelector('#submitButton');
+const subscribeInput = document.querySelector('#subscribeInput');
 let menuIsActive = false;
 
 const toggleMenu = () => {
@@ -39,4 +41,14 @@ header.addEventListener('click', ({ target }) => {
     navLink.classList.add('link_active');
   };
 
+});
+
+document.addEventListener('submit', (e) => {
+  e.preventDefault();
+  
+  const form = e.target.closest('form');
+
+  if (!form) return;
+
+  subscribeInput.value = '';
 });

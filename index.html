@@ -380,7 +380,7 @@
 
           <!-- review the best products -->
           <section
-            class="flex flex-col items-center p-4 mb-24 rounded-xl bg-[url('../dist/img/best_products_review/best_products_review.png')] bg-no-repeat bg-cover sm:p-8 lg:flex-row lg:justify-between"
+            class="flex flex-col items-center p-4 mb-24 bg-[url('../dist/img/best_products_review/best_products_review.png')] bg-no-repeat bg-cover rounded-xl sm:p-8 lg:flex-row lg:justify-between"
           >
             <div class="flex items-center mb-4 lg:mb-0">
               <div class="w-20 h-20 sm:w-10 sm:h-10 md:w-[50px] md:h-[50px]">
@@ -536,6 +536,62 @@
                 View all Product Reviews
               </span>
             </a>
+          </section>
+
+          <!-- subscribe section -->
+          <section class="flex flex-col gap-12 mb-24 p-5 bg-[url('../dist/img/subscribe/subscribe_bg.png')] bg-no-repeat bg-cover rounded-xl  md:p-[50px] lg:flex-row">
+            
+            <!-- subscribe block img -->
+            <div class="max-w-[500px] mx-auto lg:w-1/2">
+              <img
+                src="./dist/img/subscribe/subscribe.svg"
+                alt="Subscribe image"
+                class="block w-full h-full"
+              >
+            </div>
+
+            <!-- subscribe block content -->
+            <div class="max-w-[500px] mx-auto lg:w-1/2">
+              <div class="flex justify-center items-center mb-8 text-center lg:justify-start">
+                <div class="w-10 h-10 p-2 sm:w-[60px] sm:h-[60px] sm:p-[10px] bg-white rounded-full">
+                  <img src="./dist/img/subscribe/subscribe_icon.svg" alt="" class="block w-full h-full">
+                </div>
+
+                <h2 class="itemTitle ml-3 text-[22px] sm:text-[30px] dark:text-main">
+                  Newsletter Signup
+                </h2>
+              </div>
+
+              <p class="text-lg mb-6 dark:text-main">
+                Be the first to receive updates on articles, product reviews, courses, and more!
+              </p>
+
+              <!-- subscribe form -->
+              <form action="" class="">
+                <input
+                  id="subscribeInput"
+                  type="email"
+                  placeholder="Your email"
+                  class="w-full leading-0 mb-8 p-4 text-xs rounded-md outline-none focus:bg-gray-300 dark:bg-gray-300 dark:text-main dark:focus:bg-gray-500 dark:focus:text-white"
+                >
+
+                <div class="lg:flex lg:items-center">
+                  <button
+                    id="submitButton"
+                    type="submit"
+                    class="block mx-auto w-full mb-4 py-4 px-5 text-xs font-bold bg-yellow-500 rounded-md transition-colors hover:text-black hover:bg-yellow-400 sm:w-[300px] sm:mx-auto lg:w-auto lg:m-0 dark:text-main dark:hover:text-black">
+                    Submit
+                  </button>
+
+                  <a
+                    href="#"
+                    class="block ml-3 text-xs text-center hover:text-black hover:underline underline-offset-4 decoration-main dark:text-main dark:hover:text-black"
+                  >
+                    Privacy Policy
+                  </a> 
+                </div>
+              </form>
+            </div>
           </section>
         </div>
       </main>
