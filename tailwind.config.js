@@ -5,15 +5,22 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'main': ['Raleway', 'sans-serif'],
-        'title': ['Bitter', 'serif'],
+        'family-main': ['Raleway', 'sans-serif'],
+        'family-title': ['Bitter', 'serif'],
       },
       colors: {
-        'main': '#1D2F38',
-        'custom-green': '#17A550'
+        'color-main': '#1D2F38',
+        'color-gray': '#768F9C',
+        'color-gray-light': '#eeeeee',
+        'color-gray-dark': '#5c6c75',
+        'color-green': '#1fbe5f',
+        'color-green-dark': '#17A550',
+        'color-yellow': '#ffdf28',
+        'color-yellow-dark': '#FFC728',
+        'color-blue': '#E3EBF1'
       },
       gridTemplateRows: {
-        'page': 'auto 1fr auto',
+        'page-template': 'auto 1fr auto',
       },
       maxWidth: {
         container: '1174px',

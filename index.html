@@ -10,14 +10,14 @@
   </head>
 
   <body
-    class="font-main text-lg text-main bg-white lg:text-base dark:bg-gray-900 dark:text-gray-300"
+    class="font-main text-lg text-color-main bg-white lg:text-base dark:bg-color-main dark:text-color-gray-light"
   >
     <!-- page wrapper -->
-    <div class="grid grid-rows-page h-screen">
+    <div class="grid grid-rows-page-template h-screen">
       <!-- header  -->
       <header
         id="header"
-        class="fixed top-0 inset-x-0 z-20 bg-white lg:shadow-md lg:shadow-gray-300 dark:bg-gray-900 dark:shadow-gray-700"
+        class="fixed top-0 inset-x-0 z-20 bg-white lg:shadow-md lg:shadow-color-gray-light dark:bg-color-main dark:shadow-color-gray"
       >
         <!-- container  -->
         <div class="container">
@@ -26,7 +26,7 @@
             class="relative flex justify-between items-center w-full h-14 md:h-[85px] lg:justify-start lg:gap-9"
           >
             <div
-              class="fixed inset-0 z-20 h-14 bg-white shadow-md shadow-gray-300 md:h-[85px] lg:hidden dark:bg-gray-900 dark:shadow-gray-700"
+              class="fixed inset-0 z-20 h-14 bg-white shadow-md shadow-color-gray-light md:h-[85px] lg:hidden dark:bg-color-main dark:shadow-color-gray"
             ></div>
 
             <!-- header logo -->
@@ -50,9 +50,9 @@
               <nav
                 class="flex flex-col gap-3 overflow-y-scroll lg:flex-row lg:overflow-auto"
               >
-                <a href="#" class="link">Pages</a>
+                <a href="#" class="link justify-center px-1 py-3">Pages</a>
 
-                <a href="#" class="link">
+                <a href="#" class="link justify-center gap-1 px-1 py-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -71,7 +71,7 @@
                   Categories
                 </a>
 
-                <a href="#" class="link">
+                <a href="#" class="link justify-center gap-1 px-1 py-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -90,7 +90,7 @@
                   Blog
                 </a>
 
-                <a href="#" class="link">
+                <a href="#" class="link justify-center gap-1 px-1 py-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -109,7 +109,7 @@
                   Rewiews
                 </a>
 
-                <a href="#" class="link">
+                <a href="#" class="link justify-center gap-1 px-1 py-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -130,7 +130,7 @@
               </nav>
 
               <!-- header sign up button -->
-              <button class="link gap-2">
+              <button class="link justify-center gap-2">
                 <img src="./dist/img/header/signup.svg" alt="Sign up icon" />
 
                 Sign up
@@ -175,7 +175,7 @@
             <!-- header theme toggler -->
             <button
               id="themeToggler"
-              class="absolute right-[75px] z-20 flex p-1 border-2 border-gray-600 rounded-full sm:right-28 lg:right-40 dark:border-gray-300"
+              class="absolute right-[75px] z-20 flex p-1 border-2 border-color-main rounded-full sm:right-28 lg:right-40 dark:border-color-gray-light"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -213,7 +213,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="themeTogglerItem w-4 stroke-2 pl-px fill-gray-600 dark:fill-gray-400 dark:stroke-transparent"
+                class="themeTogglerItem w-4 stroke-2 stroke-color-main pl-px fill-color-main dark:fill-color-gray-light dark:stroke-color-gray-light"
               >
                 <path
                   stroke-linecap="round"
@@ -233,7 +233,7 @@
           <!-- intro section -->
           <section class="mb-16">
             <div
-              class="flex flex-col gap-4 p-4 bg-slate-300 rounded-xl sm:p-8 sm:gap-8 md:p-10 md:gap-10 lg:gap-[50px] lg:p-[50px] lg:flex-row dark:bg-gray-700"
+              class="flex flex-col gap-4 p-4 bg-slate-300 rounded-xl sm:p-8 sm:gap-8 md:p-10 md:gap-10 lg:gap-[50px] lg:p-[50px] lg:flex-row dark:bg-color-gray-dark"
             >
               <div class="lg:w-1/2">
                 <img
@@ -244,7 +244,7 @@
               </div>
 
               <div class="lg:w-1/2 text-lg">
-                <div class="mb-2 text-green-600">
+                <div class="mb-2 text-color-green-dark dark:text-color-green">
                   Introducing Affiliate Template for Webflow
                 </div>
 
@@ -400,7 +400,7 @@
               </div>
 
               <h2
-                class="text-lg text-center sm:ml-3 sm:text-xl font-title md:text-[28px] dark:text-main"
+                class="text-lg text-center sm:ml-3 sm:text-xl font-title md:text-[28px] dark:text-color-main"
               >
                 View our list of the best products in lawncare.
               </h2>
@@ -416,10 +416,10 @@
             <h2 class="sectionTitle mb-8">Latest Product Reviews</h2>
 
             <!-- latest products blok -->
-            <div class="flex flex-col gap-10 mb-10 md:flex-row">
+            <div class="flex flex-col gap-5 mb-10 md:flex-row lg:gap-10">
               <!-- product card -->
               <article
-                class="relative bg-gray-100 rounded-xl dark:bg-main md:w-1/3 lg:hover:scale-[1.02] lg:transition-transform lg:duration-100"
+                class="relative bg-color-gray-light rounded-xl dark:bg-main md:w-1/3 lg:hover:scale-[1.02] lg:transition-transform lg:duration-300 dark:bg-color-gray-dark"
               >
                 <!-- category link -->
                 <a
@@ -454,7 +454,7 @@
               </article>
               <!-- product card -->
               <article
-                class="relative md:w-1/3 bg-gray-100 rounded-xl dark:bg-main lg:hover:scale-[1.02] lg:transition-transform lg:duration-100"
+                class="relative md:w-1/3 bg-color-gray-light rounded-xl dark:bg-main lg:hover:scale-[1.02] lg:transition-transform lg:duration-300 dark:bg-color-gray-dark"
               >
                 <!-- category link -->
                 <a
@@ -490,7 +490,7 @@
 
               <!-- product card -->
               <article
-                class="relative md:w-1/3 bg-gray-100 rounded-xl dark:bg-main lg:hover:scale-[1.02] lg:transition-transform lg:duration-100"
+                class="relative md:w-1/3 bg-color-gray-light rounded-xl dark:bg-main lg:hover:scale-[1.02] lg:transition-transform lg:duration-300 dark:bg-color-gray-dark"
               >
                 <!-- category link -->
                 <a
@@ -585,13 +585,13 @@
                 </div>
 
                 <h2
-                  class="itemTitle ml-3 text-[22px] sm:text-[30px] dark:text-main"
+                  class="itemTitle ml-3 text-[22px] sm:text-[30px] dark:text-color-main"
                 >
                   Newsletter Signup
                 </h2>
               </div>
 
-              <p class="text-lg mb-6 dark:text-main">
+              <p class="text-lg mb-6 dark:text-color-main">
                 Be the first to receive updates on articles, product reviews,
                 courses, and more!
               </p>
@@ -602,14 +602,14 @@
                   id="subscribeInput"
                   type="email"
                   placeholder="Your email"
-                  class="w-full leading-0 mb-8 p-4 text-xs rounded-md outline-none focus:bg-gray-300 dark:bg-gray-300 dark:text-main dark:focus:bg-gray-500 dark:focus:text-white"
+                  class="w-full leading-0 mb-8 p-4 text-xs rounded-md outline-none border border-transparent focus:border-color-gray dark:bg-color-gray-light dark:text-color-main dark:focus:bg-color-gray dark:focus:text-white"
                 />
 
                 <div class="lg:flex lg:items-center">
                   <button
                     id="submitButton"
                     type="submit"
-                    class="block mx-auto w-full mb-4 py-4 px-5 text-xs font-bold bg-yellow-500 rounded-md transition-colors hover:text-black hover:bg-yellow-400 sm:w-[300px] sm:mx-auto lg:w-auto lg:m-0 dark:text-main dark:hover:text-black"
+                    class="block mx-auto w-full mb-4 py-4 px-5 text-xs font-bold bg-color-yellow-dark rounded-md transition-colors hover:text-black hover:bg-color-yellow sm:w-[300px] sm:mx-auto lg:w-auto lg:m-0 dark:text-color-main dark:hover:text-black"
                   >
                     Submit
                   </button>
@@ -617,7 +617,7 @@
                   <a
                     href="#"
                     target="_blank"
-                    class="block ml-3 text-xs text-center hover:text-black hover:underline underline-offset-4 decoration-main dark:text-main dark:hover:text-black"
+                    class="block ml-3 text-xs text-center hover:text-black hover:underline underline-offset-4 decoration-main dark:text-color-main dark:hover:text-black"
                   >
                     Privacy Policy
                   </a>
@@ -654,7 +654,7 @@
                   class="block w-10 h-10 p-[2px]"
                 >
                   <svg
-                    class="w-full h-full fill-main transition-all hover:fill-custom-green dark:fill-gray-300 dark:hover:fill-custom-green"
+                    class="w-full h-full fill-color-main transition-all hover:fill-color-green-dark dark:fill-color-gray-light dark:hover:fill-color-green-dark"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 50 50"
@@ -673,7 +673,7 @@
                   class="block w-10 h-10  p-[2px]"
                 >
                   <svg
-                  class="w-full h-full fill-main transition-all hover:fill-custom-green dark:fill-gray-300 dark:hover:fill-custom-green"
+                  class="w-full h-full fill-color-main transition-all hover:fill-color-green-dark dark:fill-color-gray-light dark:hover:fill-color-green-dark"
                     fill="#none"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 30 30"
@@ -692,7 +692,7 @@
                   class="block w-10 h-10 p-[2px]"
                 >
                   <svg
-                    class="w-full h-full fill-main transition-all hover:fill-custom-green dark:fill-gray-300 dark:hover:fill-custom-green"
+                    class="w-full h-full fill-color-main transition-all hover:fill-color-green-dark dark:fill-color-gray-light dark:hover:fill-color-green-dark"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="7 8 50 50"
@@ -779,10 +779,10 @@
               <div class="mb-5 lg:flex">
                 <input 
                   type="text"
-                  class="block w-full h-12 mb-2 px-2 border border-gray-400 rounded-md outline-none focus:bg-gray-200 md:w-auto md:flex-grow md:rounded-r-none dark:bg-gray-400 dark:focus:bg-gray-700"
+                  class="block w-full h-12 mb-2 px-2 border border-color-gray rounded-md outline-none focus:bg-color-gray-light md:w-auto md:flex-grow md:rounded-r-none dark:bg-color-gray dark:focus:bg-color-gray"
                 >
 
-                <button class="flex items-center justify-center w-full h-12 text-xs text-white leading-3 bg-gray-400 transition-colors hover:bg-gray-600 rounded-md md:w-20 md:rounded-l-none dark:bg-gray-600 dark:hover:bg-main">
+                <button class="flex items-center justify-center w-full h-12 text-xs text-white leading-3 bg-color-gray transition-colors hover:bg-color-gray-dark rounded-md md:w-20 md:rounded-l-none dark:bg-color-gray-dark dark:hover:bg-main">
                   Search
                 </button>
               </div>
@@ -793,7 +793,7 @@
                   <a
                     href="#"
                     target="_blank"
-                    class="underline-offset-4 decoration-main hover:underline"
+                    class="link"
                   >About</a>
                 </li>
 
@@ -801,7 +801,8 @@
                   <a
                     href="#"
                     target="_blank"
-                    class="underline-offset-4 decoration-main hover:underline"
+                    clink
+                    class="link"
                   >Categories</a>
                 </li>
 
@@ -809,7 +810,7 @@
                   <a
                     href="#"
                     target="_blank"
-                    class="underline-offset-4 decoration-main hover:underline"
+                    class="link"
                   >Tools</a>
                 </li>
 
@@ -817,7 +818,7 @@
                   <a
                     href="#"
                     target="_blank"
-                    class="underline-offset-4 decoration-main hover:underline"
+                    class="link"
                   >Contact</a>
                 </li>
 
@@ -825,7 +826,7 @@
                   <a
                     href="#"
                     target="_blank"
-                    class="underline-offset-4 decoration-main hover:underline"
+                    class="link"
                   >Privacy Policy</a>
                 </li>
 
@@ -833,13 +834,13 @@
                   <a
                     href="#"
                     target="_blank"
-                    class="underline-offset-4 decoration-main hover:underline"
+                    class="link"
                   >Affiliate Disclosure</a>
                 </li>
               </ul>
 
               <!-- footer copyright -->
-              <div class="py-5 border-t border-gray-600">
+              <div class="py-5 border-t border-color-gray-dark">
                 ©2022 Your Brand Name
               </div>
             </div>
@@ -847,27 +848,27 @@
 
           <!-- footer bottom -->
           <div
-            class="flex flex-col items-center py-5 border-t border-gray-700 sm:flex-row sm:justify-between dark:border-gray-300"
+            class="flex flex-col items-center py-5 border-t border-color-gray sm:flex-row sm:justify-between dark:border-color-gray-light"
           >
             <div class="flex items-center justify-between gap-3 mb-2 sm:mb-0">
               <a
                 href="#"
                 target="_blank"
-                class="inline-block text-xs text-main hover:underline underline-offset-8 dark:text-gray-300"
+                class="inline-block text-xs text-color-main hover:underline underline-offset-8 dark:text-color-gray-light"
                 >Style Guide</a
               >
 
               <a
                 href="#"
                 target="_blank"
-                class="inline-block text-xs text-main hover:underline underline-offset-8 dark:text-gray-300"
+                class="inline-block text-xs text-color-main hover:underline underline-offset-8 dark:text-color-gray-light"
                 >Licenses</a
               >
 
               <a
                 href="#"
                 target="_blank"
-                class="inline-block text-xs text-main hover:underline underline-offset-8 dark:text-gray-300"
+                class="inline-block text-xs text-color-main hover:underline underline-offset-8 dark:text-color-gray-light"
                 >Changelog</a
               >
             </div>
